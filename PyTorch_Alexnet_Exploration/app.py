@@ -14,7 +14,7 @@ def preprocessing_image(image): # preprocessing of image
     return image
 
 model = AlexNet(num_classes=10)
-model.load_state_dict(torch.load('alexnet_model.pth', map_location=torch.device('cpu')))
+model.load_state_dict(torch.load('PyTorch_Alexnet_Exploration/alexnet_model.pth', map_location=torch.device('cpu')))
 st.title('Image Classification')
 file_upload = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"]) # uploader for image
 
